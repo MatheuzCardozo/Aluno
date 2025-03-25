@@ -20,7 +20,6 @@ btnBuscar.onclick = () =>{
 }
 
 //Funções da página principal
-
 async function buscarAluno() {
     const inpBuscar = document.querySelector("#inpBuscar").value.trim();;
     const lblAluno = document.querySelector("#lblAluno");
@@ -77,11 +76,11 @@ async function cadastrarAluno() {
 }
 
 async function excluirAluno() {
-    const inpExcluir = document.querySelector("#inpExcluir"); // Campo onde o usuário digita o ID
+    const inpExcluir = document.querySelector("#inpExcluir");
     const idAluno = inpExcluir.value.trim();
 
     if (!idAluno) {
-        alert("Informe um ID válido!");
+        alert("Informe um Matricula válida!");
         return;
     }
 

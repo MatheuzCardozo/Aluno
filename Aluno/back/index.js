@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json()); 
 
-// Rota para listar alunos
+//Rota para listar alunos
 app.get("/alunos", async (req, res) => {
     try {
         const alunos = await listar();
@@ -17,7 +17,7 @@ app.get("/alunos", async (req, res) => {
     }
 });
 
-// Rota para inserir um novo aluno
+//Rota para inserir um novo aluno
 app.post("/alunos", async (req, res) => {
     try {
         const aluno = req.body;

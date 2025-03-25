@@ -1,7 +1,7 @@
 //Funções base de ligação com o
 import { conexao } from "../database.js";
 
-//função que conecta as outras ao banco e tbm cria o banco se assim for necessario
+//Função que conecta as outras ao banco e tbm cria o banco se assim for necessario
 let db;
 async function conectar() {
     if (!db) { 
@@ -17,7 +17,7 @@ async function conectar() {
     return db;
 }
 
-// Função que acrescenta objetos ao banco
+//Função que acrescenta objetos ao banco
 async function inserir(aluno) {
     const db = await conectar();
 
@@ -29,7 +29,7 @@ async function inserir(aluno) {
 
 }
 
-// Faz a listagem do objeto
+//Faz a listagem do objeto
 async function listar() {
     const db = await conectar(); 
 
