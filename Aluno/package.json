@@ -1,9 +1,9 @@
 {
-  "name": "aluno-monorepo",
+  "name": "aluno-root",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"cd back && npm run dev\" \"cd front && npm run dev\""
+    "dev": "concurrently \"npm run dev --prefix back\" \"npm run dev --prefix back/front\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
