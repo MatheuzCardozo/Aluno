@@ -13,7 +13,7 @@ app.get("/alunos", async (req, res) => {
         const alunos = await listar();
         res.json(alunos); 
     } catch (error) {
-        res.status(500).json({ error: "Erro ao listar alunos" });
+        res.status(500).json({ error: "Erro ao listar todos os alunos" });
     }
 });
 
