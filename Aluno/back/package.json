@@ -1,21 +1,11 @@
 {
-  "name": "projeto",
+  "name": "aluno-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "concurrently \"cd back && npm run dev\" \"cd front && npm run dev\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7"
-  },
-  "type": "module"
-}
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
