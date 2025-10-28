@@ -1,7 +1,8 @@
 # Aluno
 Um  Sistema de Cadastro de Alunos
 
-para usar é necessário a instalação dos seguintes componentes:
+para usar é necessário a instalação dos seguintes componentes: 
+
 - sqlite3
 - sqlite
 - express
